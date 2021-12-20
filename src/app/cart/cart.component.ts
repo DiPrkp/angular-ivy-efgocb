@@ -8,7 +8,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  checkoutForm = this.formBuilder.group({name: '', addres: ''})
+  checkoutForm = this.formBuilder.group({name: '', address: ''})
   items = this.cartService.getItems();
   
   constructor(
